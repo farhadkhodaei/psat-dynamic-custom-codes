@@ -62,3 +62,4 @@ if (indj2>indj3)
     realeig(2)=eig3;
     realeig(3)=eig2;
 end
+realeig
