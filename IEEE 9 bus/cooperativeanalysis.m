@@ -14,6 +14,14 @@ set_param('d_009_2/PQ1','p4_5q',loadstr1);
 set_param('d_009_2/PQ2','p4_5q',loadstr2);
 set_param('d_009_2/PQ3','p4_5q',loadstr3);
 
+%set inertia
+inertiastr1=['[',num2str(2*HH1),'  ',num2str(0),']'];
+inertiastr2=['[',num2str(2*HH2),'  ',num2str(0),']'];
+inertiastr3=['[',num2str(2*HH3),'  ',num2str(0),']'];
+set_param('d_009_2/Gen1','p18_19q',inertiastr1);
+set_param('d_009_2/Gen2','p18_19q',inertiastr2);
+set_param('d_009_2/Gen3','p18_19q',inertiastr3);
+
 %do power flow and small signal stability analysis
 %initialization
 Settings.init=0;
