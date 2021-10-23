@@ -15,9 +15,9 @@ set_param('d_009_2/PQ2','p4_5q',loadstr2);
 set_param('d_009_2/PQ3','p4_5q',loadstr3);
 
 %set inertia
-inertiastr1=['[',num2str(2*HH1),'  ',num2str(0),']'];
-inertiastr2=['[',num2str(2*HH2),'  ',num2str(0),']'];
-inertiastr3=['[',num2str(2*HH3),'  ',num2str(0),']'];
+inertiastr1=['[',num2str(2*H1),'  ',num2str(0),']'];
+inertiastr2=['[',num2str(2*H2),'  ',num2str(0),']'];
+inertiastr3=['[',num2str(2*H3),'  ',num2str(0),']'];
 set_param('d_009_2/Gen1','p18_19q',inertiastr1);
 set_param('d_009_2/Gen2','p18_19q',inertiastr2);
 set_param('d_009_2/Gen3','p18_19q',inertiastr3);
@@ -29,6 +29,6 @@ Settings.pq2z=1;
 clpsat.init=1;
 clpsat.pq2z=1;
 %analysis
-fm_eigen('runsssa');
+fm_eigen('runsssa');                                   
 
 
