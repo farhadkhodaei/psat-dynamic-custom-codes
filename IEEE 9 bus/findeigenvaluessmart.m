@@ -63,3 +63,14 @@ if (indj2>indj3)
     realeig(3)=eig2;
 end
 realeig
+realsall=SSSA.report.Matrix{2,1}(:,1);
+
+for iiii=1:length(realsall)
+    if (realsall(iiii)==0 || realsall(iiii)==eig1 || realsall(iiii)==eig2 || realsall(iiii)==eig3)
+        realsall(iiii)=-1000;
+    end
+end
+
+maxotherreal=max(realsall);
+
+
